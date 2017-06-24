@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="low是javascript的静态类型检查工具，最近在写react项目的时候用到flow，应该说flow是学习react 的一个必学工具。 flow 安装配置yarn add --dev babel-cli babel-preset-flow 配置babel之类的就不再写了，我们用到了create-react-app脚手架，没有.babelrc文件，所以在webpack.config.dev.j">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://cxrainie.top/2017/06/24/hello-world/index.html">
+<meta property="og:title" content="flow 初探">
+<meta property="og:url" content="http://cxrainie.top/2017/06/24/flow/index.html">
 <meta property="og:site_name" content="Chauncey Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-06-24T02:48:45.000Z">
+<meta property="og:description" content="low是javascript的静态类型检查工具，最近在写react项目的时候用到flow，应该说flow是学习react 的一个必学工具。 flow 安装配置yarn add --dev babel-cli babel-preset-flow 配置babel之类的就不再写了，我们用到了create-react-app脚手架，没有.babelrc文件，所以在webpack.config.dev.j">
+<meta property="og:updated_time" content="2017-06-24T04:42:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="flow 初探">
+<meta name="twitter:description" content="low是javascript的静态类型检查工具，最近在写react项目的时候用到flow，应该说flow是学习react 的一个必学工具。 flow 安装配置yarn add --dev babel-cli babel-preset-flow 配置babel之类的就不再写了，我们用到了create-react-app脚手架，没有.babelrc文件，所以在webpack.config.dev.j">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://cxrainie.top/2017/06/24/hello-world/"/>
+  <link rel="canonical" href="http://cxrainie.top/2017/06/24/flow/"/>
 
 
 
 
 
-  <title>Hello World | Chauncey Blog</title>
+  <title>flow 初探 | Chauncey Blog</title>
   
 
 
@@ -265,7 +265,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://cxrainie.top/2017/06/24/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://cxrainie.top/2017/06/24/flow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chauncey">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">flow 初探</h1>
         
 
         <div class="post-meta">
@@ -294,7 +294,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-24T10:48:45+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-24T11:59:43+08:00">
                 2017-06-24
               </time>
             
@@ -329,15 +329,85 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>low是javascript的静态类型检查工具，最近在写react项目的时候用到flow，应该说flow是学习react 的一个必学工具。</p>
+<h3 id="flow-安装配置"><a href="#flow-安装配置" class="headerlink" title="flow 安装配置"></a>flow 安装配置</h3><pre><code>yarn add --dev babel-cli babel-preset-flow
+</code></pre><p>配置babel之类的就不再写了，我们用到了create-react-app脚手架，没有.babelrc文件，所以在webpack.config.dev.js的babel加上</p>
+<pre><code>{
+    &quot;presets&quot;: [&quot;flow&quot;]
+}
+</code></pre><h4 id="安装flow"><a href="#安装flow" class="headerlink" title="安装flow"></a>安装flow</h4><p>使用npm或者yarn，如下：</p>
+<pre><code>yarn add --dev flow-bin
+npm install --save-dev flow-bin
+</code></pre><p>编辑<em>package.json</em>，添加 </p>
+<pre><code>&quot;flow&quot;:&quot;flow&quot;,
+</code></pre><p>完成。</p>
+<h3 id="flow使用"><a href="#flow使用" class="headerlink" title="flow使用"></a>flow使用</h3><h4 id="初始化flow"><a href="#初始化flow" class="headerlink" title="初始化flow"></a>初始化flow</h4><pre><code>flow init
+</code></pre><p>如果成功，会看到根目录下生成一个.flowconfig文件，flow的配置写在里面。</p>
+<p>使用flow，首先在需要被检查的文件顶部加上</p>
+<pre><code>//@flow
+</code></pre><p>然后命令行输入：</p>
+<pre><code>flow status
+</code></pre><p>这个命令会启动一个后台的进程，检查有//@flow的所有文件，并且输出error，之后可以用</p>
+<pre><code>flow check
+</code></pre><p>进行检查。</p>
+<pre><code>flow stop
+</code></pre><p>停止后台进程。也可以用</p>
+<pre><code>flow check --all
+</code></pre><p>检查所有的文件。flow 的类型参见<a href="https://flow.org/en/docs/types/" target="_blank" rel="external">官网文档</a>。</p>
+<h3 id="在react中使用flow"><a href="#在react中使用flow" class="headerlink" title="在react中使用flow"></a>在react中使用flow</h3><pre><code>class MyComponent extends React.Component {
+    props:{
+        props1:string,
+        prosp2:string,
+    };
+    static defaultProps = {
+        prop1: &quot;foo&quot;
+    };
+    state:{
+        state1:number,
+        state2:Object,
+    }
+}
+</code></pre><p>可以直接写在组件内部，但是类型的定义写在顶部比较好，如下：</p>
+<pre><code>import xxx from &apos;xxx&apos;;
+type Props={
+    props1:string,
+    props2:string,
+}
+type DefaultProps = { prop: string };
+type state={
+    state1:number,
+    state2:Object,
+}
+
+class MyComponent extends React.Component&lt;DefaultProps, Props, State&gt; {
+    static defaultProps = {
+         prop: &quot;foo&quot; 
+    };
+    state = { 
+        prop: &quot;bar&quot; 
+    };
+}
+</code></pre><p>or</p>
+<pre><code>class MyComponent extends React.Component {
+    props:Props;
+    state:State;
+    static defaultProps = {
+         prop: &quot;foo&quot; 
+    };
+    state = { 
+        prop: &quot;bar&quot; 
+    };
+}
+</code></pre><p>可以使用<em>flow-typed</em>导入常用的类库类型。</p>
+<h4 id="less-css"><a href="#less-css" class="headerlink" title="less css"></a>less css</h4><p>在flow检查的时候</p>
+<pre><code>import styles from &apos;./xxx.less&apos;;
+</code></pre><p>检查错误，在.flowconfig中加上：</p>
+<pre><code>module.name_mapper.extension=&apos;less&apos; -&gt; &apos;&lt;PROJECT_ROOT&gt;/CSSModuleStub.js&apos;
+</code></pre><p>并且在root目录下创建文件<em>CSSModuleStub.js</em>，</p>
+<pre><code>type CSSModule = { [key: string]: string }
+const emptyCSSModule: CSSModule = {}
+export default emptyCSSModule
+</code></pre><p>搞定。<br>其他的图片、url之类的一样的方法。<br>不对的地方请指正。</p>
 
       
     </div>
@@ -477,7 +547,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#flow-安装配置"><span class="nav-number">1.</span> <span class="nav-text">flow 安装配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装flow"><span class="nav-number">1.1.</span> <span class="nav-text">安装flow</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flow使用"><span class="nav-number">2.</span> <span class="nav-text">flow使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化flow"><span class="nav-number">2.1.</span> <span class="nav-text">初始化flow</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在react中使用flow"><span class="nav-number">3.</span> <span class="nav-text">在react中使用flow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#less-css"><span class="nav-number">3.1.</span> <span class="nav-text">less css</span></a></li></ol></li></ol></div>
             
 
           </div>
